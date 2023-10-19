@@ -59,32 +59,23 @@ Test passwords from a wordlist file.
 ```
 $ ./brownie-pdf-cracker --pdf path/to/encrypted.pdf --wordlist path/to/wordlist.txt
 ```
-### 
-   
 
-
-
-
-
-
-
-
-
-
-
-
-
-# brownie_pdf_cracker
-This repo include smart pdf cracker
-
-## Installation
+### Yaniv's Magic Mode
+Activate Yaniv's magic password cracking mode. This mode prompts you to enter the password length and then generates and tests passwords of that length.
 ```
-git clone https://github.com/yanivsetton/brownie_pdf_cracker.git
-cd brownie_pdf_cracker
-cargo build --release 
-./target/release/pdf_cracker -p <PDF_path_file> -y
-./target/release/pdf_cracker -p <PDF_path_file> -i
+$ ./brownie-pdf-cracker --pdf path/to/encrypted.pdf --yaniv-magic
 ```
+
+### For more information and additional options, use the --help flag:
+```
+$ ./brownie-pdf-cracker --help
+```
+
+### Contributing
+Contributions to Brownie PDF Cracker are welcome! Whether you want to report a bug, suggest a new feature, or contribute code, please refer to the Contribution Guidelines for details on how to get involved.
+
+### License
+This project is licensed under the MIT License.
 
 ## How to use
 ```bash
