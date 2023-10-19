@@ -46,8 +46,27 @@ $ git clone https://github.com/yourusername/brownie-pdf-cracker.git
 $ cd brownie-pdf-cracker
 $ cargo build --release
 ```
-### Usage
-Brownie PDF Cracker can be used to recover passwords from PDF files. It offers various modes of operation:
+## How to use
+```bash
+Usage: crackify [OPTIONS] --pdf <PDF>
+
+Options:
+  -p, --pdf <PDF>
+          Path to a password protected PDF file
+  -y, --yaniv-magic specify password length and let the magic begin
+  -w, --wordlist <WORDLIST>
+          Path to a wordlist. Each word should be on a new line
+  -i, --is-numeric
+          Whether or not the password is entirely numeric
+  -s, --smallest-numeric-length <SMALLEST_NUMERIC_LENGTH>
+          Minimum length of numeric password [default: 1]
+  -l, --largest-numeric-length <LARGEST_NUMERIC_LENGTH>
+          Maximum length of numeric password [default: 8]
+  -h, --help
+          Print help
+  -V, --version
+          Print version
+```
 
 ### Numeric Passwords
 ```
@@ -76,28 +95,6 @@ Contributions to Brownie PDF Cracker are welcome! Whether you want to report a b
 
 ### License
 This project is licensed under the MIT License.
-
-## How to use
-```bash
-Usage: crackify [OPTIONS] --pdf <PDF>
-
-Options:
-  -p, --pdf <PDF>
-          Path to a password protected PDF file
-  -y, --yaniv-magic specify password length and let the magic begin
-  -w, --wordlist <WORDLIST>
-          Path to a wordlist. Each word should be on a new line
-  -i, --is-numeric
-          Whether or not the password is entirely numeric
-  -s, --smallest-numeric-length <SMALLEST_NUMERIC_LENGTH>
-          Minimum length of numeric password [default: 1]
-  -l, --largest-numeric-length <LARGEST_NUMERIC_LENGTH>
-          Maximum length of numeric password [default: 8]
-  -h, --help
-          Print help
-  -V, --version
-          Print version
-```
 
 
 
