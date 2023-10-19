@@ -1,6 +1,6 @@
 [package]
-name = "crackify"
-version = "0.1.0"
+name = "brownie_pdf_cracker"
+version = "0.1.6"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
@@ -16,5 +16,5 @@ rand = "0.8.5"
 qpdf = "0.1.6"
 
 [[bin]]
-name = "pdf_cracker"
+name = "brownie_pdf_cracker"
 path = "src/main.rs"

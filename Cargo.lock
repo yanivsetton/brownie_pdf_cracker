@@ -147,6 +147,20 @@ dependencies = [
 ]
 
 [[package]]
+name = "brownie_pdf_cracker"
+version = "0.1.6"
+dependencies = [
+ "clap",
+ "env_logger",
+ "indicatif",
+ "log",
+ "pdf",
+ "qpdf",
+ "rand",
+ "rayon",
+]
+
+[[package]]
 name = "cbc"
 version = "0.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -267,20 +281,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a17b76ff3a4162b0b27f354a0c87015ddad39d35f9c0c36607a3bdd175dde1f1"
 dependencies = [
  "libc",
-]
-
-[[package]]
-name = "crackify"
-version = "0.1.0"
-dependencies = [
- "clap",
- "env_logger",
- "indicatif",
- "log",
- "pdf",
- "qpdf",
- "rand",
- "rayon",
 ]
 
 [[package]]

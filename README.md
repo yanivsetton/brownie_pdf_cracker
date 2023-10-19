@@ -6,15 +6,20 @@ Brownie PDF Cracker is a command-line tool for cracking password-protected PDF f
 
 ## Table of Contents
 
-- [About](#about)
-- [Features](#features)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
+- [Brownie PDF Cracker](#brownie-pdf-cracker)
+  - [Table of Contents](#table-of-contents)
+  - [About](#about)
+  - [Features](#features)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+  - [How to use](#how-to-use)
+    - [Numeric Passwords](#numeric-passwords)
+    - [Wordlist Passwords](#wordlist-passwords)
+    - [Yaniv's Magic Mode](#yanivs-magic-mode)
+    - [For more information and additional options, use the --help flag:](#for-more-information-and-additional-options-use-the---help-flag)
+    - [Contributing](#contributing)
+    - [License](#license)
 
 ## About
 
@@ -48,7 +53,7 @@ $ cargo build --release
 ```
 ## How to use
 ```bash
-Usage: crackify [OPTIONS] --pdf <PDF>
+Usage: brownie_pdf_cracker [OPTIONS] --pdf <PDF>
 
 Options:
   -p, --pdf <PDF>
@@ -70,24 +75,24 @@ Options:
 
 ### Numeric Passwords
 ```
-$ ./brownie-pdf-cracker --pdf path/to/encrypted.pdf --is-numeric --smallest-numeric-length 4 --largest-numeric-length 6
+$ ./brownie_pdf_cracker --pdf path/to/encrypted.pdf --is-numeric --smallest-numeric-length 4 --largest-numeric-length 6
 ```
 
 ### Wordlist Passwords
 Test passwords from a wordlist file.
 ```
-$ ./brownie-pdf-cracker --pdf path/to/encrypted.pdf --wordlist path/to/wordlist.txt
+$ ./brownie_pdf_cracker --pdf path/to/encrypted.pdf --wordlist path/to/wordlist.txt
 ```
 
 ### Yaniv's Magic Mode
 Activate Yaniv's magic password cracking mode. This mode prompts you to enter the password length and then generates and tests passwords of that length.
 ```
-$ ./brownie-pdf-cracker --pdf path/to/encrypted.pdf --yaniv-magic
+$ ./brownie_pdf_cracker --pdf path/to/encrypted.pdf --yaniv-magic
 ```
 
 ### For more information and additional options, use the --help flag:
 ```
-$ ./brownie-pdf-cracker --help
+$ ./brownie_pdf_cracker --help
 ```
 
 ### Contributing
