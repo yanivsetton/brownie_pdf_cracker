@@ -1,3 +1,66 @@
+# Brownie PDF Cracker
+
+Brownie PDF Cracker is a command-line tool for cracking password-protected PDF files. It provides a flexible and efficient way to recover passwords for PDF documents, whether you've forgotten the password to your own PDF or need to perform a security assessment.
+
+![Brownie PDF Cracker](banner.png)
+
+## Table of Contents
+
+- [About](#about)
+- [Features](#features)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
+
+## About
+
+Brownie PDF Cracker is a Rust-based tool designed to help you regain access to password-protected PDF files. Whether you've lost your PDF password or need to test the security of your PDF documents, this tool provides the capability to efficiently crack PDF passwords.
+
+## Features
+
+- Password cracking for PDF files.
+- Numeric and wordlist-based password generation.
+- Yaniv's magic password cracking mode.
+- Progress tracking with a customizable progress bar.
+- Command-line interface for easy usage.
+
+## Getting Started
+
+Follow these instructions to get Brownie PDF Cracker up and running on your system.
+
+### Prerequisites
+
+To run Brownie PDF Cracker, you'll need the following:
+
+- [Rust](https://www.rust-lang.org/tools/install) installed on your system.
+
+### Installation
+
+1. Clone the repository to your local machine:
+
+   ```bash
+   $ git clone https://github.com/yourusername/brownie-pdf-cracker.git
+   $ cd brownie-pdf-cracker
+   $ cargo build --release
+   ```
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
 # brownie_pdf_cracker
 This repo include smart pdf cracker
 
