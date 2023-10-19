@@ -1,12 +1,12 @@
 # brownie_pdf_cracker
 This repo include smart pdf cracker
 
-##Installation
-###git clone https://github.com/yanivsetton/brownie_pdf_cracker.git
-###cd brownie_pdf_cracker
-###cargo build --release 
-###./target/release/pdf_cracker -p <PDF_path_file> -y
-###./target/release/pdf_cracker -p <PDF_path_file> -i
+## Installation
+### git clone https://github.com/yanivsetton/brownie_pdf_cracker.git
+### cd brownie_pdf_cracker
+### cargo build --release 
+### ./target/release/pdf_cracker -p <PDF_path_file> -y
+### ./target/release/pdf_cracker -p <PDF_path_file> -i
 
 Usage
 ```bash
