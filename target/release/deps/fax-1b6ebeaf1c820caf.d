@@ -1,0 +1,11 @@
+/Users/yanivsetton/Documents/tictuk/experimental/rust/target/release/deps/fax-1b6ebeaf1c820caf.rmeta: /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fax-0.2.0/src/lib.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fax-0.2.0/src/maps.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fax-0.2.0/src/decoder.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fax-0.2.0/src/encoder.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fax-0.2.0/src/tiff.rs
+
+/Users/yanivsetton/Documents/tictuk/experimental/rust/target/release/deps/libfax-1b6ebeaf1c820caf.rlib: /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fax-0.2.0/src/lib.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fax-0.2.0/src/maps.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fax-0.2.0/src/decoder.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fax-0.2.0/src/encoder.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fax-0.2.0/src/tiff.rs
+
+/Users/yanivsetton/Documents/tictuk/experimental/rust/target/release/deps/fax-1b6ebeaf1c820caf.d: /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fax-0.2.0/src/lib.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fax-0.2.0/src/maps.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fax-0.2.0/src/decoder.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fax-0.2.0/src/encoder.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fax-0.2.0/src/tiff.rs
+
+/Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fax-0.2.0/src/lib.rs:
+/Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fax-0.2.0/src/maps.rs:
+/Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fax-0.2.0/src/decoder.rs:
+/Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fax-0.2.0/src/encoder.rs:
+/Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fax-0.2.0/src/tiff.rs:

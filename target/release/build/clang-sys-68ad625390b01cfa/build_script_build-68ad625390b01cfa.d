@@ -1,0 +1,9 @@
+/Users/yanivsetton/Documents/tictuk/experimental/rust/target/release/build/clang-sys-68ad625390b01cfa/build_script_build-68ad625390b01cfa: /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.6.1/build.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.6.1/build/macros.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.6.1/build/common.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.6.1/build/dynamic.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.6.1/build/static.rs
+
+/Users/yanivsetton/Documents/tictuk/experimental/rust/target/release/build/clang-sys-68ad625390b01cfa/build_script_build-68ad625390b01cfa.d: /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.6.1/build.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.6.1/build/macros.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.6.1/build/common.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.6.1/build/dynamic.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.6.1/build/static.rs
+
+/Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.6.1/build.rs:
+/Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.6.1/build/macros.rs:
+/Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.6.1/build/common.rs:
+/Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.6.1/build/dynamic.rs:
+/Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.6.1/build/static.rs:

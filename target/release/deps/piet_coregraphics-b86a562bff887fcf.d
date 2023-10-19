@@ -1,0 +1,10 @@
+/Users/yanivsetton/Documents/tictuk/experimental/rust/target/release/deps/piet_coregraphics-b86a562bff887fcf.rmeta: /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/piet-coregraphics-0.6.2/src/lib.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/piet-coregraphics-0.6.2/src/ct_helpers.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/piet-coregraphics-0.6.2/src/gradient.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/piet-coregraphics-0.6.2/src/text.rs
+
+/Users/yanivsetton/Documents/tictuk/experimental/rust/target/release/deps/libpiet_coregraphics-b86a562bff887fcf.rlib: /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/piet-coregraphics-0.6.2/src/lib.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/piet-coregraphics-0.6.2/src/ct_helpers.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/piet-coregraphics-0.6.2/src/gradient.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/piet-coregraphics-0.6.2/src/text.rs
+
+/Users/yanivsetton/Documents/tictuk/experimental/rust/target/release/deps/piet_coregraphics-b86a562bff887fcf.d: /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/piet-coregraphics-0.6.2/src/lib.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/piet-coregraphics-0.6.2/src/ct_helpers.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/piet-coregraphics-0.6.2/src/gradient.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/piet-coregraphics-0.6.2/src/text.rs
+
+/Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/piet-coregraphics-0.6.2/src/lib.rs:
+/Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/piet-coregraphics-0.6.2/src/ct_helpers.rs:
+/Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/piet-coregraphics-0.6.2/src/gradient.rs:
+/Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/piet-coregraphics-0.6.2/src/text.rs:

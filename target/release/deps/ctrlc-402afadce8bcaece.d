@@ -1,0 +1,11 @@
+/Users/yanivsetton/Documents/tictuk/experimental/rust/target/release/deps/ctrlc-402afadce8bcaece.rmeta: /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ctrlc-3.4.1/src/lib.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ctrlc-3.4.1/src/error.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ctrlc-3.4.1/src/platform/mod.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ctrlc-3.4.1/src/platform/unix/mod.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ctrlc-3.4.1/src/signal.rs
+
+/Users/yanivsetton/Documents/tictuk/experimental/rust/target/release/deps/libctrlc-402afadce8bcaece.rlib: /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ctrlc-3.4.1/src/lib.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ctrlc-3.4.1/src/error.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ctrlc-3.4.1/src/platform/mod.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ctrlc-3.4.1/src/platform/unix/mod.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ctrlc-3.4.1/src/signal.rs
+
+/Users/yanivsetton/Documents/tictuk/experimental/rust/target/release/deps/ctrlc-402afadce8bcaece.d: /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ctrlc-3.4.1/src/lib.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ctrlc-3.4.1/src/error.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ctrlc-3.4.1/src/platform/mod.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ctrlc-3.4.1/src/platform/unix/mod.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ctrlc-3.4.1/src/signal.rs
+
+/Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ctrlc-3.4.1/src/lib.rs:
+/Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ctrlc-3.4.1/src/error.rs:
+/Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ctrlc-3.4.1/src/platform/mod.rs:
+/Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ctrlc-3.4.1/src/platform/unix/mod.rs:
+/Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ctrlc-3.4.1/src/signal.rs:

@@ -1,0 +1,13 @@
+/Users/yanivsetton/Documents/tictuk/experimental/rust/target/release/deps/clang_sys-89e4271d8d208c07.rmeta: /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-0.26.4/src/lib.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-0.26.4/src/support.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-0.26.4/src/link.rs /Users/yanivsetton/Documents/tictuk/experimental/rust/target/release/build/clang-sys-dbcf48e1763d6448/out/common.rs /Users/yanivsetton/Documents/tictuk/experimental/rust/target/release/build/clang-sys-dbcf48e1763d6448/out/dynamic.rs
+
+/Users/yanivsetton/Documents/tictuk/experimental/rust/target/release/deps/libclang_sys-89e4271d8d208c07.rlib: /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-0.26.4/src/lib.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-0.26.4/src/support.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-0.26.4/src/link.rs /Users/yanivsetton/Documents/tictuk/experimental/rust/target/release/build/clang-sys-dbcf48e1763d6448/out/common.rs /Users/yanivsetton/Documents/tictuk/experimental/rust/target/release/build/clang-sys-dbcf48e1763d6448/out/dynamic.rs
+
+/Users/yanivsetton/Documents/tictuk/experimental/rust/target/release/deps/clang_sys-89e4271d8d208c07.d: /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-0.26.4/src/lib.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-0.26.4/src/support.rs /Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-0.26.4/src/link.rs /Users/yanivsetton/Documents/tictuk/experimental/rust/target/release/build/clang-sys-dbcf48e1763d6448/out/common.rs /Users/yanivsetton/Documents/tictuk/experimental/rust/target/release/build/clang-sys-dbcf48e1763d6448/out/dynamic.rs
+
+/Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-0.26.4/src/lib.rs:
+/Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-0.26.4/src/support.rs:
+/Users/yanivsetton/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-0.26.4/src/link.rs:
+/Users/yanivsetton/Documents/tictuk/experimental/rust/target/release/build/clang-sys-dbcf48e1763d6448/out/common.rs:
+/Users/yanivsetton/Documents/tictuk/experimental/rust/target/release/build/clang-sys-dbcf48e1763d6448/out/dynamic.rs:
+
+# env-dep:OUT_DIR=/Users/yanivsetton/Documents/tictuk/experimental/rust/target/release/build/clang-sys-dbcf48e1763d6448/out

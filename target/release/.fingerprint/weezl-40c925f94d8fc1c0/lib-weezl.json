@@ -1,0 +1,1 @@
+{"rustc":18215811624524864732,"features":"[\"alloc\", \"default\", \"std\"]","target":16979822234402568690,"profile":3567329628440936607,"path":6259733724404845168,"deps":[],"local":[{"CheckDepInfo":{"dep_info":"release/.fingerprint/weezl-40c925f94d8fc1c0/dep-lib-weezl"}}],"rustflags":[],"metadata":5154753838649565246,"config":2202906307356721367,"compile_kind":0}
