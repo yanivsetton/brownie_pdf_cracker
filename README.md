@@ -39,14 +39,27 @@ To run Brownie PDF Cracker, you'll need the following:
 - [Rust](https://www.rust-lang.org/tools/install) installed on your system.
 
 ### Installation
+Clone the repository to your local machine:
 
-1. Clone the repository to your local machine:
+```bash
+$ git clone https://github.com/yourusername/brownie-pdf-cracker.git
+$ cd brownie-pdf-cracker
+$ cargo build --release
+```
+### Usage
+Brownie PDF Cracker can be used to recover passwords from PDF files. It offers various modes of operation:
 
-   ```bash
-   $ git clone https://github.com/yourusername/brownie-pdf-cracker.git
-   $ cd brownie-pdf-cracker
-   $ cargo build --release
-   ```
+### Numeric Passwords
+```
+$ ./brownie-pdf-cracker --pdf path/to/encrypted.pdf --is-numeric --smallest-numeric-length 4 --largest-numeric-length 6
+```
+
+### Wordlist Passwords
+Test passwords from a wordlist file.
+```
+$ ./brownie-pdf-cracker --pdf path/to/encrypted.pdf --wordlist path/to/wordlist.txt
+```
+### 
    
 
 
