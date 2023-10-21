@@ -47,7 +47,7 @@ To run Brownie PDF Cracker, you'll need the following:
 Clone the repository to your local machine:
 
 ```bash
-$ git clone https://github.com/yourusername/brownie-pdf-cracker.git
+$ git clone https://github.com/yanivsetton/brownie_pdf_cracker/tree/main
 $ cd brownie-pdf-cracker
 $ cargo build --release
 ```
