@@ -47,9 +47,9 @@ To run Brownie PDF Cracker, you'll need the following:
 Clone the repository to your local machine:
 
 ```bash
-$ git clone https://github.com/yanivsetton/brownie_pdf_cracker/tree/main
-$ cd brownie-pdf-cracker
-$ cargo build --release
+git clone https://github.com/yanivsetton/brownie_pdf_cracker/tree/main
+cd brownie-pdf-cracker
+cargo build --release
 ```
 ## How to use
 ```bash
@@ -75,24 +75,24 @@ Options:
 
 ### Numeric Passwords
 ```
-$ ./brownie_pdf_cracker --pdf path/to/encrypted.pdf --is-numeric --smallest-numeric-length 4 --largest-numeric-length 6
+./brownie_pdf_cracker --pdf path/to/encrypted.pdf --is-numeric --smallest-numeric-length 4 --largest-numeric-length 6
 ```
 
 ### Wordlist Passwords
 Test passwords from a wordlist file.
 ```
-$ ./brownie_pdf_cracker --pdf path/to/encrypted.pdf --wordlist path/to/wordlist.txt
+./brownie_pdf_cracker --pdf path/to/encrypted.pdf --wordlist path/to/wordlist.txt
 ```
 
 ### Yaniv's Magic Mode
 Activate Yaniv's magic password cracking mode. This mode prompts you to enter the password length and then generates and tests passwords of that length.
 ```
-$ ./brownie_pdf_cracker --pdf path/to/encrypted.pdf --yaniv-magic
+./brownie_pdf_cracker --pdf path/to/encrypted.pdf --yaniv-magic
 ```
 
 ### For more information and additional options, use the --help flag:
 ```
-$ ./brownie_pdf_cracker --help
+./brownie_pdf_cracker --help
 ```
 
 ### Contributing
