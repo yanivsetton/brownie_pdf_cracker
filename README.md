@@ -1,4 +1,5 @@
 [![Rust](https://github.com/yanivsetton/brownie_pdf_cracker/actions/workflows/rust.yml/badge.svg?branch=main)](https://github.com/yanivsetton/brownie_pdf_cracker/actions/workflows/rust.yml)
+[![Rust](https://github.com/yanivsetton/brownie_pdf_cracker/actions/workflows/docker-image.yml/badge.svg?branch=main)](https://github.com/yanivsetton/brownie_pdf_cracker/actions/workflows/docker-image.yml)
 # Brownie PDF Cracker
 
 Brownie PDF Cracker is a command-line tool for cracking password-protected PDF files. It provides a flexible and efficient way to recover passwords for PDF documents, whether you've forgotten the password to your own PDF or need to perform a security assessment.
