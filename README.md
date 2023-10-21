@@ -22,12 +22,15 @@ To use Yaniv's Magic Mode:
 
 ```bash
 $ ./brownie-pdf-cracker --pdf path/to/encrypted.pdf --yaniv-magic
+```
 
 ![Brownie PDF Cracker](banner.png)
 
 ## Table of Contents
 
 - [Brownie PDF Cracker](#brownie-pdf-cracker)
+    - [Yaniv's Magic Mode](#yanivs-magic-mode)
+      - [How It Works](#how-it-works)
   - [Table of Contents](#table-of-contents)
   - [About](#about)
   - [Features](#features)
@@ -37,7 +40,7 @@ $ ./brownie-pdf-cracker --pdf path/to/encrypted.pdf --yaniv-magic
   - [How to use](#how-to-use)
     - [Numeric Passwords](#numeric-passwords)
     - [Wordlist Passwords](#wordlist-passwords)
-    - [Yaniv's Magic Mode](#yanivs-magic-mode)
+    - [Yaniv's Magic Mode](#yanivs-magic-mode-1)
     - [For more information and additional options, use the --help flag:](#for-more-information-and-additional-options-use-the---help-flag)
     - [Contributing](#contributing)
     - [License](#license)
