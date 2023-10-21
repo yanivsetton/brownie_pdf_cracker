@@ -2,6 +2,27 @@
 
 Brownie PDF Cracker is a command-line tool for cracking password-protected PDF files. It provides a flexible and efficient way to recover passwords for PDF documents, whether you've forgotten the password to your own PDF or need to perform a security assessment.
 
+Yaniv's Magic Mode:
+Yaniv's Magic Mode is a powerful and innovative approach to PDF password cracking that eliminates the need for a predefined wordlist or extensive knowledge about the password. This mode is ideal for users seeking an easy and effective way to crack PDF passwords without the hassle of managing wordlists.
+
+How It Works
+Password Length Customization: When you activate Yaniv's Magic Mode, the tool prompts you to specify the desired password length. This customization allows you to focus on cracking passwords of a specific length, making the process more efficient.
+
+Intelligent Password Generation: Yaniv's Magic Mode employs an intelligent algorithm to generate passwords of the specified length systematically. It covers all possible combinations, ensuring comprehensive password testing.
+
+Efficiency and Speed: By concentrating exclusively on passwords of the chosen length, Yaniv's Magic Mode dramatically reduces the time required to crack a PDF. It skips unnecessary iterations, making it one of the fastest ways to recover a PDF password.
+
+No Wordlist Required: Unlike traditional methods that rely on wordlists, Yaniv's Magic Mode does not need any external files. This means you can start cracking PDF passwords immediately, even when you have limited information about the password.
+
+Yaniv's Magic Mode is your go-to choice when you need to crack PDF passwords quickly and effectively, especially when you don't have access to a wordlist. It simplifies the process, making it accessible to users of all skill levels, and can significantly reduce the time required to regain access to your PDF documents.
+
+To use Yaniv's Magic Mode:
+
+bash
+Copy code
+$ ./brownie-pdf-cracker --pdf path/to/encrypted.pdf --yaniv-magic
+Unlock PDFs effortlessly and efficiently with Yaniv's Magic Mode!
+
 ![Brownie PDF Cracker](banner.png)
 
 ## Table of Contents
