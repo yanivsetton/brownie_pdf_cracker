@@ -7,9 +7,9 @@ edition = "2021"
 
 [dependencies]
 clap = { version = "4.3.19", features = ["derive"] }
-indicatif = "*"
+indicatif = "0.16.2"
 pdf = "0.8.1"
-rayon = "1.7.0"
+rayon = "1.7.0" 
 log = "0.4.14"    # Use a specific version of the log crate that is compatible
 env_logger = "0.10.0" 
 rand = "0.8.5" 

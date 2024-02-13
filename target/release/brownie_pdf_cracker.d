@@ -1,0 +1,1 @@
+/home/ubuntu/projects/brownie_pdf_cracker/target/release/brownie_pdf_cracker: /home/ubuntu/projects/brownie_pdf_cracker/src/args.rs /home/ubuntu/projects/brownie_pdf_cracker/src/main.rs /home/ubuntu/projects/brownie_pdf_cracker/src/password_list.rs /home/ubuntu/projects/brownie_pdf_cracker/src/pdf_crack.rs /home/ubuntu/projects/brownie_pdf_cracker/src/yaniv_magic.rs
