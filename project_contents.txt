@@ -32,81 +32,85 @@ pub fn generate_password_list(args: &Args) -> Vec<String> {
 
 File: ./src/yaniv_magic.rs
 use indicatif::{ProgressBar, ProgressStyle};
-use rand::thread_rng;
-use rand::Rng;
 use rayon::prelude::*;
 use std::sync::atomic::{AtomicBool, AtomicUsize, Ordering};
 use std::sync::{Arc, Mutex};
+use std::time::Instant;
 use super::args::Args;
 use super::pdf_crack::try_password;
+fn generate_and_test_passwords(
+    charset: &[u8],
+    length: usize,
+    pdf_bytes: &[u8],
+    found: Arc<(AtomicBool, Mutex<Option<String>>)>,
+    attempts: Arc<AtomicUsize>,
+    progress: &ProgressBar,
+    start_time: Instant,
+) {
+    let total_combinations = charset.len().pow(length as u32);
 
-fn generate_random_password(length: usize) -> String {
-    let charset: &[u8] = b"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-    let mut rng = thread_rng();
-    (0..length)
-        .map(|_| {
-            let idx = rng.gen_range(0..charset.len());
-            charset[idx] as char
-        })
-        .collect()
-}
-
-pub fn yaniv_magic_crack(args: &Args, pdf_bytes: &[u8], progress: &ProgressBar, password_length: usize) {
-    let found = Arc::new((AtomicBool::new(false), Mutex::new(None))); // Hold both the flag and the password
-    let attempts = Arc::new(AtomicUsize::new(0));
-    let total_passwords = 62_usize.pow(password_length as u32);
-    progress.set_length(total_passwords as u64);
-
-    let style = ProgressStyle::default_bar()
-        .template("{spinner:.green} [{elapsed_precise}] [{bar:40.cyan/blue}] {pos:>7}/{len:7} ({eta}) Attempting: {msg}")
-        .progress_chars("#>-");
-    progress.set_style(style);
-
-    (0..total_passwords).into_par_iter().for_each_with(found.clone(), |found, _| {
+    (0..total_combinations).into_par_iter().for_each_with(found.clone(), |found, index| {
         if found.0.load(Ordering::Relaxed) {
-            return; // If password is found, exit early
+            return;
         }
 
-        let password = generate_random_password(password_length);
+        let mut combination = Vec::with_capacity(length);
+        let mut current_index = index;
+        for _ in 0..length {
+            combination.push(charset[current_index % charset.len()]);
+            current_index /= charset.len();
+        }
+        let password: String = combination.iter().rev().map(|&c| c as char).collect();
+
         if try_password(pdf_bytes, &password) {
             found.0.store(true, Ordering::Relaxed);
             let mut found_password = found.1.lock().unwrap();
             *found_password = Some(password.clone());
             println!("Password successfully found: {}", password);
-            // Correctly access `args.pdf` here
-            let pdf_file_name = args.pdf.trim_end_matches(".pdf");
-            let output_file_name = format!("{}_password.txt", pdf_file_name);
-    
-            // Attempt to write the found password to the file
-            match std::fs::write(&output_file_name, password.as_bytes()) {
-                Ok(_) => println!("Password successfully found and written to {}", output_file_name),
-                Err(e) => println!("Failed to write password to file: {}", e),
-            }
-    
-            return; // Exit the loop early
+            return;
         }
-    
 
-        let current_attempt = attempts.fetch_add(1, Ordering::SeqCst);
-        progress.set_position(current_attempt as u64 + 1); // Correctly update the progress position
+        let current_attempt = attempts.fetch_add(1, Ordering::SeqCst) + 1;
+        // Update the progress bar every 100,000 attempts
+        if current_attempt % 100_000 == 0 {
+            let elapsed = start_time.elapsed().as_secs_f32();
+            let attempts_per_sec = current_attempt as f32 / elapsed;
+            progress.set_position(current_attempt as u64);
+            progress.set_message(format!("Attempts/sec: {:.2}", attempts_per_sec));
+        }
     });
+}
 
-    // After the parallel processing, check if the password was found and print it
+
+pub fn yaniv_magic_crack(_args: &Args, pdf_bytes: &[u8], progress: &ProgressBar, password_length: usize) {
+    let charset: &[u8] = b"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    let found = Arc::new((AtomicBool::new(false), Mutex::new(None)));
+    let attempts = Arc::new(AtomicUsize::new(0));
+    let total_passwords = charset.len().pow(password_length as u32);
+    progress.set_length(total_passwords as u64);
+    let start_time = Instant::now();
+
+    let style = ProgressStyle::default_bar()
+        .template("{spinner:.green} [{elapsed_precise}] [{bar:40.cyan/blue}] {pos:>7}/{len:7} ({eta}) {msg}")
+        .progress_chars("#>-");
+    progress.set_style(style);
+
+    generate_and_test_passwords(charset, password_length, pdf_bytes, found.clone(), attempts.clone(), progress, start_time);
+
     let was_found = found.0.load(Ordering::Relaxed);
     if was_found {
         let found_password = found.1.lock().unwrap();
-        if found_password.is_some() {
-            // The password print statement has been moved to the point of discovery above.
-            progress.finish_with_message("Password found. Check above for the password.");
+        if let Some(password) = &*found_password {
+            println!("Password successfully found: {}", password);
+            progress.finish_with_message("Password found. Check output for details.");
         } else {
-            println!("Password found but not set correctly.");
             progress.finish_with_message("Password found but not set correctly.");
         }
     } else {
-        println!("Password not found.");
         progress.finish_with_message("Password not found.");
     }
 }
+
 ################################################################################
 
 File: ./src/args.rs
@@ -146,6 +150,7 @@ File: ./src/pdf_crack.rs
 use indicatif::ProgressBar;
 use super::args::Args;
 
+#[inline]
 pub fn try_password(pdf_contents: &[u8], password: &str) -> bool {
     pdf::file::FileOptions::cached()
         .password(password.as_bytes())
