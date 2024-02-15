@@ -72,7 +72,7 @@ pub fn yaniv_magic_crack(args: &Args, pdf_bytes: &[u8], progress: &ProgressBar, 
             found.0.store(true, Ordering::Relaxed);
             let mut found_password = found.1.lock().unwrap();
             *found_password = Some(password.clone());
-    
+            println!("Password successfully found: {}", password);
             // Correctly access `args.pdf` here
             let pdf_file_name = args.pdf.trim_end_matches(".pdf");
             let output_file_name = format!("{}_password.txt", pdf_file_name);
@@ -107,7 +107,6 @@ pub fn yaniv_magic_crack(args: &Args, pdf_bytes: &[u8], progress: &ProgressBar, 
         progress.finish_with_message("Password not found.");
     }
 }
-
 ################################################################################
 
 File: ./src/args.rs
@@ -229,6 +228,5 @@ fn main() {
     progress.finish();
     info!("Done");
 }
-
 ################################################################################
 

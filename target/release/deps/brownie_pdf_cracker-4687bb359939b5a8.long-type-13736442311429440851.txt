@@ -1,0 +1,1 @@
+rayon::iter::FlatMap<rayon::range::Iter<usize>, {closure@src/yaniv_magic.rs:17:49: 17:57}>

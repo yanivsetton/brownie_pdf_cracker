@@ -14,7 +14,7 @@ log = "0.4.14"    # Use a specific version of the log crate that is compatible
 env_logger = "0.10.0" 
 rand = "0.8.5" 
 qpdf = "0.1.6"
-
+itertools = "0.10.1" 
 [[bin]]
 name = "brownie_pdf_cracker"
 path = "src/main.rs"

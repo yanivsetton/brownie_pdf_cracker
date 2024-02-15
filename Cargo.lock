@@ -153,6 +153,7 @@ dependencies = [
  "clap",
  "env_logger",
  "indicatif",
+ "itertools",
  "log",
  "pdf",
  "qpdf",
