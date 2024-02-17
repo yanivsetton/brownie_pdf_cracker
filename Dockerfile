@@ -10,7 +10,11 @@ COPY . .
 # Build your Rust project
 RUN cargo build --release
 
-WORKDIR /app/target/release
+# Copy the entry point script
+COPY entrypoint.sh .
 
-# Define the command to run when the container starts
-CMD ["./brownie_pdf_cracker", "--help"]
+# Make the entry point script executable
+RUN chmod +x entrypoint.sh
+
+# Set the entry point script to run when the container starts
+ENTRYPOINT ["./entrypoint.sh"]

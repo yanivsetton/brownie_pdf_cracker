@@ -38,6 +38,7 @@ use std::sync::{Arc, Mutex};
 use std::time::Instant;
 use super::args::Args;
 use super::pdf_crack::try_password;
+
 fn generate_and_test_passwords(
     charset: &[u8],
     length: usize,
@@ -110,7 +111,6 @@ pub fn yaniv_magic_crack(_args: &Args, pdf_bytes: &[u8], progress: &ProgressBar,
         progress.finish_with_message("Password not found.");
     }
 }
-
 ################################################################################
 
 File: ./src/args.rs
@@ -150,7 +150,6 @@ File: ./src/pdf_crack.rs
 use indicatif::ProgressBar;
 use super::args::Args;
 
-#[inline]
 pub fn try_password(pdf_contents: &[u8], password: &str) -> bool {
     pdf::file::FileOptions::cached()
         .password(password.as_bytes())
