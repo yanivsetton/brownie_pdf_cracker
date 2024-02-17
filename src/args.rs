@@ -21,6 +21,10 @@ pub struct Args {
     // Add this field to enable yaniv_magic
     #[arg(short, long)]
     pub yaniv_magic: bool,
+
+    // New field for specifying password length directly
+    #[arg(short = 'n', long = "password-length")]
+    pub password_length: Option<usize>,
 }
 
 impl Args {

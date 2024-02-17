@@ -32,16 +32,17 @@ fn main() {
     let pdf_bytes = read(&args.pdf).expect("Unable to read PDF");
     let password_list = password_list::generate_password_list(&args);
 
-    let password_length: usize;
-
-    if args.yaniv_magic {
-        println!("Enter the password length:");
-        let mut input = String::new();
-        io::stdin().read_line(&mut input).expect("Failed to read input");
-        password_length = input.trim().parse().expect("Invalid input");
+    let password_length = if args.yaniv_magic {
+        // Use the provided password length if available, otherwise prompt for it
+        args.password_length.unwrap_or_else(|| {
+            println!("Enter the password length:");
+            let mut input = String::new();
+            io::stdin().read_line(&mut input).expect("Failed to read input");
+            input.trim().parse().expect("Invalid input")
+        })
     } else {
-        password_length = args.smallest_numeric_length;
-    }
+        args.smallest_numeric_length
+    };
 
     let progress = ProgressBar::new(62_usize.pow(password_length as u32) as u64);
     let style = ProgressStyle::default_bar()
