@@ -84,7 +84,8 @@ Usage: brownie_pdf_cracker [OPTIONS] --pdf <PDF>
 Options:
   -p, --pdf <PDF>
           Path to a password protected PDF file
-  -y, --yaniv-magic specify password length and let the magic begin
+  -y, --yaniv-magic use Yaniv magic option (if you know the length)
+  --password-length specify password length and let the magic begin
   -w, --wordlist <WORDLIST>
           Path to a wordlist. Each word should be on a new line
   -i, --is-numeric
