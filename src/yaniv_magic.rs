@@ -5,6 +5,8 @@ use std::sync::{Arc, Mutex};
 use std::time::Instant;
 use super::args::Args;
 use super::pdf_crack::try_password;
+use std::fs::OpenOptions;
+use std::io::Write;
 
 fn generate_and_test_passwords(
     charset: &[u8],
@@ -14,6 +16,7 @@ fn generate_and_test_passwords(
     attempts: Arc<AtomicUsize>,
     progress: &ProgressBar,
     start_time: Instant,
+    pdf_name: &str, // Added parameter for PDF name
 ) {
     let total_combinations = charset.len().pow(length as u32);
 
@@ -35,11 +38,19 @@ fn generate_and_test_passwords(
             let mut found_password = found.1.lock().unwrap();
             *found_password = Some(password.clone());
             println!("Password successfully found: {}", password);
+
+            // Write the found password to password.txt
+            let mut file = OpenOptions::new()
+                .create(true)
+                .append(true)
+                .open("password.txt")
+                .expect("Cannot open password.txt");
+            writeln!(file, "{}: {}", pdf_name, password).expect("Cannot write to password.txt");
+
             return;
         }
 
         let current_attempt = attempts.fetch_add(1, Ordering::SeqCst) + 1;
-        // Update the progress bar every 100,000 attempts
         if current_attempt % 100_000 == 0 {
             let elapsed = start_time.elapsed().as_secs_f32();
             let attempts_per_sec = current_attempt as f32 / elapsed;
@@ -49,8 +60,7 @@ fn generate_and_test_passwords(
     });
 }
 
-
-pub fn yaniv_magic_crack(_args: &Args, pdf_bytes: &[u8], progress: &ProgressBar, password_length: usize) {
+pub fn yaniv_magic_crack(args: &Args, pdf_bytes: &[u8], progress: &ProgressBar, password_length: usize) {
     let charset: &[u8] = b"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
     let found = Arc::new((AtomicBool::new(false), Mutex::new(None)));
     let attempts = Arc::new(AtomicUsize::new(0));
@@ -63,7 +73,8 @@ pub fn yaniv_magic_crack(_args: &Args, pdf_bytes: &[u8], progress: &ProgressBar,
         .progress_chars("#>-");
     progress.set_style(style);
 
-    generate_and_test_passwords(charset, password_length, pdf_bytes, found.clone(), attempts.clone(), progress, start_time);
+    // Pass the PDF name to the generate_and_test_passwords function
+    generate_and_test_passwords(charset, password_length, pdf_bytes, found.clone(), attempts.clone(), progress, start_time, &args.pdf);
 
     let was_found = found.0.load(Ordering::Relaxed);
     if was_found {
